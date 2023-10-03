@@ -1,0 +1,14 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="PruebaCrudModelStoreContainer" CdmEntityContainer="PruebaCrudEntities1">
+    <EntitySetMapping Name="Prueba1">
+      <EntityTypeMapping TypeName="PruebaCrudModel.Prueba1">
+        <MappingFragment StoreEntitySet="Prueba1">
+          <ScalarProperty Name="N2" ColumnName="N2" />
+          <ScalarProperty Name="N1" ColumnName="N1" />
+          <ScalarProperty Name="Id" ColumnName="Id" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,103 @@
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.AssemblyReference.cache
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.SuggestedBindingRedirects.cache
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.AddAdmin.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.ConfiguracionAdmin.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.CRUD.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.CrudRA.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.CRUD_EDITAR.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.EDITAR_ADMIN.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.FormularioRegistroPrincipal.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.IngresoAdmin.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.Main.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.Notificacion.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.Properties.Resources.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.VistaAdmin.resources
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.GenerateResource.cache
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.CoreCompileInputs.cache
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe.config
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe.manifest
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DemoHuella.application
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DemoHuella.pdb
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\Bunifu_UI_v1.5.3.dll
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DPFPDevNET.dll
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DPFPEngNET.dll
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DPFPShrNET.dll
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\DPFPVerNET.dll
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\EntityFramework.dll
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\EntityFramework.xml
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.exe.manifest
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.application
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.CopyComplete
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.exe
+C:\Users\EQUIPO 15A\Desktop\Programa Final Control de Asistencia para Empleados\DemoHuella\DemoHuella\obj\Release\DemoHuella.pdb
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe.config
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe.manifest
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.application
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.pdb
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DPFPDevNET.dll
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DPFPEngNET.dll
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DPFPShrNET.dll
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DPFPVerNET.dll
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\EntityFramework.dll
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\EntityFramework.xml
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.AssemblyReference.cache
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.SuggestedBindingRedirects.cache
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.AddAdmin.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.ConfiguracionAdmin.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.CRUD.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.CrudRA.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.CRUD_EDITAR.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.EDITAR_ADMIN.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.FormularioRegistroPrincipal.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.IngresoAdmin.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.Main.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.Notificacion.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.Properties.Resources.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.VistaAdmin.resources
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.GenerateResource.cache
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.CoreCompileInputs.cache
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.exe.manifest
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.application
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.CopyComplete
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.exe
+C:\Users\ADMIN\Desktop\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.pdb
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe.config
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe.manifest
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.application
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.exe
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DemoHuella.pdb
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DPFPDevNET.dll
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DPFPEngNET.dll
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DPFPShrNET.dll
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\DPFPVerNET.dll
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\EntityFramework.dll
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\EntityFramework.SqlServer.dll
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\EntityFramework.xml
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\bin\Release\EntityFramework.SqlServer.xml
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.AssemblyReference.cache
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.SuggestedBindingRedirects.cache
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.AddAdmin.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.ConfiguracionAdmin.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.CRUD.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.CrudRA.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.CRUD_EDITAR.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.EDITAR_ADMIN.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.FormularioRegistroPrincipal.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.IngresoAdmin.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.Main.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.Notificacion.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.Properties.Resources.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.VistaAdmin.resources
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.GenerateResource.cache
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.CoreCompileInputs.cache
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.exe.manifest
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.application
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.csproj.CopyComplete
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.exe
+C:\Users\Usuario\Desktop\Proyecto de Asistencia Empleado\Asistencia Empleados\Asistencia-Final-main\DemoHuella\DemoHuella\obj\Release\DemoHuella.pdb

@@ -1,0 +1,110 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AsistenciaModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Administrador">
+    <Key>
+      <PropertyRef Name="IdAdministrador" />
+    </Key>
+    <Property Name="IdAdministrador" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="Usuario" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Pass" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="EmpleadoId" />
+    </Key>
+    <Property Name="EmpleadoId" Type="Decimal" Precision="15" Scale="0" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Huella" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="RegistroAsistencia" Relationship="Self.FK_Empleado_RegistroAsistencia" FromRole="Empleado" ToRole="RegistroAsistencia" />
+    <NavigationProperty Name="InformacionEmpleados" Relationship="Self.FK_InformacionEmpleados_Empleados" FromRole="Empleado" ToRole="InformacionEmpleados" />
+  </EntityType>
+  <EntityType Name="InformacionEmpleados">
+    <Key>
+      <PropertyRef Name="IdInformacionEmpleados" />
+    </Key>
+    <Property Name="IdInformacionEmpleados" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="TipoDocumento" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Documento" Type="Decimal" Precision="15" Scale="0" />
+    <Property Name="Sexo" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="FechaNacimiento" Type="DateTime" Precision="0" />
+    <Property Name="FechaExpedicionDoc" Type="DateTime" Precision="0" />
+    <Property Name="LugarExpedicion" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="GrupoSanguineo" Type="String" MaxLength="20" FixedLength="false" Unicode="false" />
+    <Property Name="Celular" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Direccion" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Salario" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="Honorarios" Type="Decimal" Precision="18" Scale="0" />
+    <Property Name="FechaInicio" Type="DateTime" Precision="0" />
+    <Property Name="FechaFinalizacion" Type="DateTime" Precision="0" />
+    <Property Name="TipoContrato" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Cargo" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="BancoPagoNomina" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="TipoCuenta" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="NumeroCuenta" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="Eps" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Arl" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="FondoDePension" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="FondoDeCensantias" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CajaDeCompensacion" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CasoEmergenciaAvisar" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CasoEmergenciaNumeroContacto" Type="String" MaxLength="15" FixedLength="false" Unicode="false" />
+    <Property Name="NivelAcademico" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="TipoPaga" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="CarnetVacunacionCovid" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="EmpleadoId" Type="Decimal" Precision="15" Scale="0" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK_InformacionEmpleados_Empleados" FromRole="InformacionEmpleados" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="RegistroAsistencia">
+    <Key>
+      <PropertyRef Name="RegistroNo" />
+    </Key>
+    <Property Name="RegistroNo" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpleadoId" Type="Decimal" Precision="15" Scale="0" Nullable="false" />
+    <Property Name="HoraIngreso" Type="Time" Precision="7" />
+    <Property Name="HoraInicioAlmuerzo" Type="Time" Precision="7" />
+    <Property Name="HoraFinAlmuerzo" Type="Time" Precision="7" />
+    <Property Name="HoraSalida" Type="Time" Precision="7" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK_Empleado_RegistroAsistencia" FromRole="RegistroAsistencia" ToRole="Empleado" />
+  </EntityType>
+  <Association Name="FK_Empleado_RegistroAsistencia">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="RegistroAsistencia" Type="Self.RegistroAsistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="RegistroAsistencia">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformacionEmpleados_Empleados">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+    <End Role="InformacionEmpleados" Type="Self.InformacionEmpleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="InformacionEmpleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="UsuariosDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Administrador" EntityType="Self.Administrador" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" />
+    <EntitySet Name="InformacionEmpleados" EntityType="Self.InformacionEmpleados" />
+    <EntitySet Name="RegistroAsistencia" EntityType="Self.RegistroAsistencia" />
+    <AssociationSet Name="FK_Empleado_RegistroAsistencia" Association="Self.FK_Empleado_RegistroAsistencia">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="RegistroAsistencia" EntitySet="RegistroAsistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformacionEmpleados_Empleados" Association="Self.FK_InformacionEmpleados_Empleados">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="InformacionEmpleados" EntitySet="InformacionEmpleados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

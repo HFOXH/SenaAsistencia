@@ -1,0 +1,106 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="AsistenciaModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Administrador">
+    <Key>
+      <PropertyRef Name="IdAdministrador" />
+    </Key>
+    <Property Name="IdAdministrador" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="Usuario" Type="varchar" MaxLength="50" />
+    <Property Name="Pass" Type="varchar" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="EmpleadoId" />
+    </Key>
+    <Property Name="EmpleadoId" Type="decimal" Precision="15" Scale="0" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="45" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="45" />
+    <Property Name="Huella" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="InformacionEmpleados">
+    <Key>
+      <PropertyRef Name="IdInformacionEmpleados" />
+    </Key>
+    <Property Name="IdInformacionEmpleados" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="TipoDocumento" Type="varchar" MaxLength="45" />
+    <Property Name="Documento" Type="decimal" Precision="15" Scale="0" />
+    <Property Name="Sexo" Type="varchar" MaxLength="45" />
+    <Property Name="FechaNacimiento" Type="date" />
+    <Property Name="FechaExpedicionDoc" Type="date" />
+    <Property Name="LugarExpedicion" Type="varchar" MaxLength="45" />
+    <Property Name="GrupoSanguineo" Type="varchar" MaxLength="20" />
+    <Property Name="Celular" Type="varchar" MaxLength="15" />
+    <Property Name="Direccion" Type="varchar" MaxLength="45" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" />
+    <Property Name="Salario" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="Honorarios" Type="decimal" Precision="18" Scale="0" />
+    <Property Name="FechaInicio" Type="date" />
+    <Property Name="FechaFinalizacion" Type="date" />
+    <Property Name="TipoContrato" Type="varchar" MaxLength="45" />
+    <Property Name="Cargo" Type="varchar" MaxLength="45" />
+    <Property Name="BancoPagoNomina" Type="varchar" MaxLength="45" />
+    <Property Name="TipoCuenta" Type="varchar" MaxLength="45" />
+    <Property Name="NumeroCuenta" Type="varchar" MaxLength="15" />
+    <Property Name="Eps" Type="varchar" MaxLength="45" />
+    <Property Name="Arl" Type="varchar" MaxLength="45" />
+    <Property Name="FondoDePension" Type="varchar" MaxLength="45" />
+    <Property Name="FondoDeCensantias" Type="varchar" MaxLength="45" />
+    <Property Name="CajaDeCompensacion" Type="varchar" MaxLength="45" />
+    <Property Name="CasoEmergenciaAvisar" Type="varchar" MaxLength="45" />
+    <Property Name="CasoEmergenciaNumeroContacto" Type="varchar" MaxLength="15" />
+    <Property Name="NivelAcademico" Type="varchar" MaxLength="45" />
+    <Property Name="TipoPaga" Type="varchar" MaxLength="45" />
+    <Property Name="CarnetVacunacionCovid" Type="varchar" MaxLength="45" />
+    <Property Name="EmpleadoId" Type="decimal" Precision="15" Scale="0" />
+  </EntityType>
+  <EntityType Name="RegistroAsistencia">
+    <Key>
+      <PropertyRef Name="RegistroNo" />
+    </Key>
+    <Property Name="RegistroNo" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpleadoId" Type="decimal" Precision="15" Scale="0" Nullable="false" />
+    <Property Name="HoraIngreso" Type="time" Precision="7" />
+    <Property Name="HoraInicioAlmuerzo" Type="time" Precision="7" />
+    <Property Name="HoraFinAlmuerzo" Type="time" Precision="7" />
+    <Property Name="HoraSalida" Type="time" Precision="7" />
+    <Property Name="Fecha" Type="date" />
+  </EntityType>
+  <Association Name="FK_Empleado_RegistroAsistencia">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="RegistroAsistencia" Type="Self.RegistroAsistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="RegistroAsistencia">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_InformacionEmpleados_Empleados">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="0..1" />
+    <End Role="InformacionEmpleados" Type="Self.InformacionEmpleados" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="EmpleadoId" />
+      </Principal>
+      <Dependent Role="InformacionEmpleados">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="AsistenciaModelStoreContainer">
+    <EntitySet Name="Administrador" EntityType="Self.Administrador" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="InformacionEmpleados" EntityType="Self.InformacionEmpleados" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegistroAsistencia" EntityType="Self.RegistroAsistencia" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Empleado_RegistroAsistencia" Association="Self.FK_Empleado_RegistroAsistencia">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="RegistroAsistencia" EntitySet="RegistroAsistencia" />
+    </AssociationSet>
+    <AssociationSet Name="FK_InformacionEmpleados_Empleados" Association="Self.FK_InformacionEmpleados_Empleados">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="InformacionEmpleados" EntitySet="InformacionEmpleados" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

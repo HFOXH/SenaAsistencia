@@ -1,0 +1,69 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BeOnTimeDBModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2012" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="IdArea" />
+    </Key>
+    <Property Name="IdArea" Type="int" Nullable="false" />
+    <Property Name="NombreArea" Type="varchar" MaxLength="100" Nullable="false" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="Identificacion" />
+    </Key>
+    <Property Name="Identificacion" Type="decimal" Precision="15" Scale="0" Nullable="false" />
+    <Property Name="Nombres" Type="varchar" MaxLength="45" />
+    <Property Name="Apellidos" Type="varchar" MaxLength="45" />
+    <Property Name="Area" Type="int" />
+    <Property Name="Celular" Type="decimal" Precision="15" Scale="0" />
+    <Property Name="Correo" Type="varchar" MaxLength="50" />
+    <Property Name="Huella" Type="varbinary(max)" />
+  </EntityType>
+  <EntityType Name="RegistroAsistencia">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="int" StoreGeneratedPattern="Identity" Nullable="false" />
+    <Property Name="EmpleadoId" Type="decimal" Precision="15" Scale="0" Nullable="false" />
+    <Property Name="HoraIngreso" Type="time" Precision="7" />
+    <Property Name="HoraSalida" Type="time" Precision="7" />
+    <Property Name="Fecha" Type="date" />
+  </EntityType>
+  <Association Name="FK_Empleado_Area">
+    <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="IdArea" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="Area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_RegistroAsistencia">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="RegistroAsistencia" Type="Self.RegistroAsistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Identificacion" />
+      </Principal>
+      <Dependent Role="RegistroAsistencia">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BeOnTimeDBModelStoreContainer">
+    <EntitySet Name="Area" EntityType="Self.Area" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="RegistroAsistencia" EntityType="Self.RegistroAsistencia" Schema="dbo" store:Type="Tables" />
+    <AssociationSet Name="FK_Empleado_Area" Association="Self.FK_Empleado_Area">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_RegistroAsistencia" Association="Self.FK_Empleado_RegistroAsistencia">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="RegistroAsistencia" EntitySet="RegistroAsistencia" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>

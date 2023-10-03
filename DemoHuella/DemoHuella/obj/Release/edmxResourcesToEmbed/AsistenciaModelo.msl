@@ -1,0 +1,74 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="AsistenciaModelStoreContainer" CdmEntityContainer="UsuariosDBEntities">
+    <EntitySetMapping Name="Administrador">
+      <EntityTypeMapping TypeName="AsistenciaModel.Administrador">
+        <MappingFragment StoreEntitySet="Administrador">
+          <ScalarProperty Name="IdAdministrador" ColumnName="IdAdministrador" />
+          <ScalarProperty Name="Usuario" ColumnName="Usuario" />
+          <ScalarProperty Name="Pass" ColumnName="Pass" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="Empleado">
+      <EntityTypeMapping TypeName="AsistenciaModel.Empleado">
+        <MappingFragment StoreEntitySet="Empleado">
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+          <ScalarProperty Name="Nombres" ColumnName="Nombres" />
+          <ScalarProperty Name="Apellidos" ColumnName="Apellidos" />
+          <ScalarProperty Name="Huella" ColumnName="Huella" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="InformacionEmpleados">
+      <EntityTypeMapping TypeName="AsistenciaModel.InformacionEmpleados">
+        <MappingFragment StoreEntitySet="InformacionEmpleados">
+          <ScalarProperty Name="IdInformacionEmpleados" ColumnName="IdInformacionEmpleados" />
+          <ScalarProperty Name="TipoDocumento" ColumnName="TipoDocumento" />
+          <ScalarProperty Name="Documento" ColumnName="Documento" />
+          <ScalarProperty Name="Sexo" ColumnName="Sexo" />
+          <ScalarProperty Name="FechaNacimiento" ColumnName="FechaNacimiento" />
+          <ScalarProperty Name="FechaExpedicionDoc" ColumnName="FechaExpedicionDoc" />
+          <ScalarProperty Name="LugarExpedicion" ColumnName="LugarExpedicion" />
+          <ScalarProperty Name="GrupoSanguineo" ColumnName="GrupoSanguineo" />
+          <ScalarProperty Name="Celular" ColumnName="Celular" />
+          <ScalarProperty Name="Direccion" ColumnName="Direccion" />
+          <ScalarProperty Name="Correo" ColumnName="Correo" />
+          <ScalarProperty Name="Salario" ColumnName="Salario" />
+          <ScalarProperty Name="Honorarios" ColumnName="Honorarios" />
+          <ScalarProperty Name="FechaInicio" ColumnName="FechaInicio" />
+          <ScalarProperty Name="FechaFinalizacion" ColumnName="FechaFinalizacion" />
+          <ScalarProperty Name="TipoContrato" ColumnName="TipoContrato" />
+          <ScalarProperty Name="Cargo" ColumnName="Cargo" />
+          <ScalarProperty Name="BancoPagoNomina" ColumnName="BancoPagoNomina" />
+          <ScalarProperty Name="TipoCuenta" ColumnName="TipoCuenta" />
+          <ScalarProperty Name="NumeroCuenta" ColumnName="NumeroCuenta" />
+          <ScalarProperty Name="Eps" ColumnName="Eps" />
+          <ScalarProperty Name="Arl" ColumnName="Arl" />
+          <ScalarProperty Name="FondoDePension" ColumnName="FondoDePension" />
+          <ScalarProperty Name="FondoDeCensantias" ColumnName="FondoDeCensantias" />
+          <ScalarProperty Name="CajaDeCompensacion" ColumnName="CajaDeCompensacion" />
+          <ScalarProperty Name="CasoEmergenciaAvisar" ColumnName="CasoEmergenciaAvisar" />
+          <ScalarProperty Name="CasoEmergenciaNumeroContacto" ColumnName="CasoEmergenciaNumeroContacto" />
+          <ScalarProperty Name="NivelAcademico" ColumnName="NivelAcademico" />
+          <ScalarProperty Name="TipoPaga" ColumnName="TipoPaga" />
+          <ScalarProperty Name="CarnetVacunacionCovid" ColumnName="CarnetVacunacionCovid" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RegistroAsistencia">
+      <EntityTypeMapping TypeName="AsistenciaModel.RegistroAsistencia">
+        <MappingFragment StoreEntitySet="RegistroAsistencia">
+          <ScalarProperty Name="RegistroNo" ColumnName="RegistroNo" />
+          <ScalarProperty Name="EmpleadoId" ColumnName="EmpleadoId" />
+          <ScalarProperty Name="HoraIngreso" ColumnName="HoraIngreso" />
+          <ScalarProperty Name="HoraInicioAlmuerzo" ColumnName="HoraInicioAlmuerzo" />
+          <ScalarProperty Name="HoraFinAlmuerzo" ColumnName="HoraFinAlmuerzo" />
+          <ScalarProperty Name="HoraSalida" ColumnName="HoraSalida" />
+          <ScalarProperty Name="Fecha" ColumnName="Fecha" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

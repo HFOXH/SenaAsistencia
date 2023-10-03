@@ -1,0 +1,73 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="BeOnTimeDBModel" Alias="Self" annotation:UseStrongSpatialTypes="false" xmlns:annotation="http://schemas.microsoft.com/ado/2009/02/edm/annotation" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm">
+  <EntityType Name="Area">
+    <Key>
+      <PropertyRef Name="IdArea" />
+    </Key>
+    <Property Name="IdArea" Type="Int32" Nullable="false" />
+    <Property Name="NombreArea" Type="String" MaxLength="100" FixedLength="false" Unicode="false" Nullable="false" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK_Empleado_Area" FromRole="Area" ToRole="Empleado" />
+  </EntityType>
+  <EntityType Name="Empleado">
+    <Key>
+      <PropertyRef Name="Identificacion" />
+    </Key>
+    <Property Name="Identificacion" Type="Decimal" Precision="15" Scale="0" Nullable="false" />
+    <Property Name="Nombres" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Apellidos" Type="String" MaxLength="45" FixedLength="false" Unicode="false" />
+    <Property Name="Area" Type="Int32" />
+    <Property Name="Celular" Type="Decimal" Precision="15" Scale="0" />
+    <Property Name="Correo" Type="String" MaxLength="50" FixedLength="false" Unicode="false" />
+    <Property Name="Huella" Type="Binary" MaxLength="Max" FixedLength="false" />
+    <NavigationProperty Name="Area1" Relationship="Self.FK_Empleado_Area" FromRole="Empleado" ToRole="Area" />
+    <NavigationProperty Name="RegistroAsistencia" Relationship="Self.FK_Empleado_RegistroAsistencia" FromRole="Empleado" ToRole="RegistroAsistencia" />
+  </EntityType>
+  <EntityType Name="RegistroAsistencia">
+    <Key>
+      <PropertyRef Name="IdRegistro" />
+    </Key>
+    <Property Name="IdRegistro" Type="Int32" Nullable="false" annotation:StoreGeneratedPattern="Identity" />
+    <Property Name="EmpleadoId" Type="Decimal" Precision="15" Scale="0" Nullable="false" />
+    <Property Name="HoraIngreso" Type="Time" Precision="7" />
+    <Property Name="HoraSalida" Type="Time" Precision="7" />
+    <Property Name="Fecha" Type="DateTime" Precision="0" />
+    <NavigationProperty Name="Empleado" Relationship="Self.FK_Empleado_RegistroAsistencia" FromRole="RegistroAsistencia" ToRole="Empleado" />
+  </EntityType>
+  <Association Name="FK_Empleado_Area">
+    <End Role="Area" Type="Self.Area" Multiplicity="0..1" />
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Area">
+        <PropertyRef Name="IdArea" />
+      </Principal>
+      <Dependent Role="Empleado">
+        <PropertyRef Name="Area" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_Empleado_RegistroAsistencia">
+    <End Role="Empleado" Type="Self.Empleado" Multiplicity="1" />
+    <End Role="RegistroAsistencia" Type="Self.RegistroAsistencia" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="Empleado">
+        <PropertyRef Name="Identificacion" />
+      </Principal>
+      <Dependent Role="RegistroAsistencia">
+        <PropertyRef Name="EmpleadoId" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <EntityContainer Name="BeOnTimeDBEntities" annotation:LazyLoadingEnabled="true">
+    <EntitySet Name="Area" EntityType="Self.Area" />
+    <EntitySet Name="Empleado" EntityType="Self.Empleado" />
+    <EntitySet Name="RegistroAsistencia" EntityType="Self.RegistroAsistencia" />
+    <AssociationSet Name="FK_Empleado_Area" Association="Self.FK_Empleado_Area">
+      <End Role="Area" EntitySet="Area" />
+      <End Role="Empleado" EntitySet="Empleado" />
+    </AssociationSet>
+    <AssociationSet Name="FK_Empleado_RegistroAsistencia" Association="Self.FK_Empleado_RegistroAsistencia">
+      <End Role="Empleado" EntitySet="Empleado" />
+      <End Role="RegistroAsistencia" EntitySet="RegistroAsistencia" />
+    </AssociationSet>
+  </EntityContainer>
+</Schema>
